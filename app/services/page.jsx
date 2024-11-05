@@ -1,5 +1,4 @@
 'use client';
-import { Description } from "@radix-ui/react-dialog";
 import Link from "next/link";
 import {BsArrowDownRight} from "react-icons/bs";
 
