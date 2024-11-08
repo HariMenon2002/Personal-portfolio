@@ -14,43 +14,53 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects=[
   {
     num:'01',
-    category:'frontend',
+    category:'Banking Webapp',
     title:'project 1',
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod obcaecati a officiis minima.",
-    stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-    image:'/',
+    description:"Developed a banking app that displays users’ banking details and supports transaction functionalities. Plaid API and Dwolla’s sandbox environment was used for simulated banking transactions with appwrite as database",
+    stack:[{name:"React"},{name:"Tailwind CSS"},{name:"Next.js"},{name:"Appwrite"},],
+    image:'/assets/work/banking.jpeg',
     live:'',
-    github:''
+    github:'https://github.com/HariMenon2002/Banking-app'
   },
   {
     num:'02',
-    category:'fullstack',
+    category:'Water management system',
     title:'project 2',
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod obcaecati a officiis minima.",
-    stack:[{name:"Nextjs"},{name:"Tailwind Css"},{name:"Node.js"}],
-    image:'/',
+    description:"Built an automated water management and purification system. Developed a Flutter app with an integrated chatbot to display key water parameters, such as pH and dissolved oxygen and alert abnomalities. Machine Learning model was also developed to predict potability of water",
+    stack:[{name:"Flutter"},{name:"ESP32"},{name:"Flask"}],
+    image:'/assets/work/water.jpg',
     live:'',
-    github:''
+    github:'https://github.com/HariMenon2002/Water-Management-Project'
   },
   {
     num:'03',
-    category:'frontend',
+    category:'Task Management',
     title:'project 3',
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod obcaecati a officiis minima.",
-    stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-    image:'/',
-    live:'',
-    github:''
+    description:"Created a full-stack task management website supporting CRUD operations on tasks. Integrated JWT-based user authentication for secure login and session management",
+    stack:[{name:"Next.js"},{name:"React"},{name:"TypeScript"},{name:"MongoDB"}],
+    image:'/assets/work/task.webp',
+    live:'https://task-management-taupe-seven.vercel.app/signin',
+    github:'https://github.com/HariMenon2002/Task-Management'
   },
   {
     num:'04',
-    category:'frontend',
+    category:'Object Detection and Tracking system',
     title:'project 4',
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod obcaecati a officiis minima.",
-    stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-    image:'/',
+    description:"This project is used to track a moving object in a frame using a laser, servo motors and a camera. This is mainly used in drone surveillance, autonomous vehicles etc.",
+    stack:[{name:"Python"},{name:"OpenCV"},{name:"Arduino"}],
+    image:'/assets/work/objecttracker.jpg',
     live:'',
-    github:''
+    github:'https://github.com/HariMenon2002/Object-Tracking-'
+  },
+  {
+    num:'05',
+    category:'Fingerprint based Attendance system',
+    title:'project 5',
+    description:"This is an attendace system which recognizes and stores fingerprints and marks attendance accordingly",
+    stack:[{name:"Embedded C"},{name:"8051 microcontroller"},{name:"R307 fingerprint scanner"}],
+    image:'/assets/work/fingerprint.jpg',
+    live:'',
+    github:'https://github.com/HariMenon2002/finger-print-based-attendance-system'
   },
 ]
 
@@ -76,7 +86,7 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
               
 
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize ">{project.category} project</h2>
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize ">{project.category} </h2>
               
               <p className="text-white/60">{project.description}</p>
 
@@ -93,7 +103,7 @@ const Work = () => {
 
               <div className="flex items-center gap-4 ">
                 {/*live project button */}
-                <Link href={project.live}>
+                <Link target="_blank" href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -107,7 +117,7 @@ const Work = () => {
                 </Link>
 
                 {/*github project button */}
-                <Link href={project.github}>
+                <Link target="_blank" href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -133,7 +143,7 @@ const Work = () => {
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/*image*/}
                       <div className="relative h-full w-full">
-                        {/* <Image src={project.image} fill className="object-cover" alt=""></Image> */}
+                        <Image src={project.image} fill className="object-fit" alt=""></Image>
                       </div>
                     </div>
                   </SwiperSlide>

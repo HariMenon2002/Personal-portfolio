@@ -1,6 +1,8 @@
 'use client';
-import { FaHtml5,FaCss3,FaJs,FaReact,FaFigma,FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss,SiNextdotjs } from "react-icons/si";
+import { FaHtml5,FaCss3,FaJs,FaReact,FaFigma,FaNodeJs, FaPython, FaJava } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiTailwindcss,SiNextdotjs, SiMongodb } from "react-icons/si";
+import { SiFlutter } from "react-icons/si";
 
 //about data
 const about={
@@ -20,8 +22,8 @@ const about={
       fieldValue:"0 Years"
     },
     {
-      fieldName:"Skype",
-      fieldValue:"hari.01"
+      fieldName:"Role",
+      fieldValue:"Web developer"
     },
     {
       fieldName:"Nationality",
@@ -42,48 +44,76 @@ const about={
   ]
 };
 
+// const experience={
+//   icon:"",
+//   title:"My Experience",
+//   description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed saepe incidunt corrupti et consectetur sit explicabo?",
+//   items:[
+//     {
+//       company:"Tech solutions Inc.",
+//       position:"Full Stack Developer",
+//       duration:"2022-Present"
+//     },
+//     {
+//       company:"ABC Inc.",
+//       position:"Full Stack Developer",
+//       duration:"2021-2022"
+//     },
+//     {
+//       company:"Tech solutions Inc.",
+//       position:"Full Stack Developer",
+//       duration:"2022-Present"
+//     },
+//     {
+//       company:"Tech solutions Inc.",
+//       position:"Full Stack Developer",
+//       duration:"2022-Present"
+//     },
+//     {
+//       company:"Tech solutions Inc.",
+//       position:"Full Stack Developer",
+//       duration:"2022-Present"
+//     },
+//     {
+//       company:"Tech solutions Inc.",
+//       position:"Full Stack Developer",
+//       duration:"2022-Present"
+//     },
+//   ]
+// };
 const experience={
   icon:"",
-  title:"My Experience",
-  description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed saepe incidunt corrupti et consectetur sit explicabo?",
+  title:"My College Activities",
+  description:"As a college student I have participated and volunteered in various organisations",
   items:[
     {
-      company:"Tech solutions Inc.",
-      position:"Full Stack Developer",
-      duration:"2022-Present"
+      company:"ISTE GEC Thrissur",
+      position:"ECE Deptartment Vice head",
+      duration:"2023-2024"
     },
     {
-      company:"ABC Inc.",
-      position:"Full Stack Developer",
-      duration:"2021-2022"
+      company:"IEEE PES",
+      position:"Volunteer",
+      duration:"2022-2024"
     },
     {
-      company:"Tech solutions Inc.",
-      position:"Full Stack Developer",
-      duration:"2022-Present"
+      company:"YIP Kerala competition",
+      position:"State Level Winner",
+      duration:"2021"
     },
     {
-      company:"Tech solutions Inc.",
-      position:"Full Stack Developer",
-      duration:"2022-Present"
+      company:"Hack@Arch GEC Thrissur",
+      position:"One of the top 10 finalists",
+      duration:"2022"
     },
-    {
-      company:"Tech solutions Inc.",
-      position:"Full Stack Developer",
-      duration:"2022-Present"
-    },
-    {
-      company:"Tech solutions Inc.",
-      position:"Full Stack Developer",
-      duration:"2022-Present"
-    },
+    
   ]
 };
 
 const education={
   icon:"",
   title:"My Education",
-  description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed saepe incidunt corrupti et consectetur sit explicabo?",
+  description:"I am an Electronics and Communication graduate from APJ Abdul Kalam Technical University",
   items:[
     {
       institution:"Government Engineering College Thrissur",
@@ -92,36 +122,22 @@ const education={
     },
     {
       institution:"Hari Sri Vidya Nidhi School",
-      degree:"12th standard",
+      degree:"12th standard ICSE",
       duration:"2019-2020"
     },
     {
       institution:"Hari Sri Vidya Nidhi School",
-      degree:"12th standard",
-      duration:"2019-2020"
+      degree:"10th standard ICSE",
+      duration:"2017-2018"
     },
-    {
-      institution:"Hari Sri Vidya Nidhi School",
-      degree:"12th standard",
-      duration:"2019-2020"
-    },
-    {
-      institution:"Hari Sri Vidya Nidhi School",
-      degree:"12th standard",
-      duration:"2019-2020"
-    },
-    {
-      institution:"Hari Sri Vidya Nidhi School",
-      degree:"12th standard",
-      duration:"2019-2020"
-    },
+
     
   ]
 };
 
 const skills={
   title:'My skills',
-  description:"lorem ipsum fsjhfsfhsf jkfhkhsh hkfdhhs hfshshh jhdsfhkhkh",
+  description:"I am skilled mainly in MERN stack and Flutter app development",
   skillList:[
     {
       icon:<FaHtml5/>,
@@ -152,9 +168,26 @@ const skills={
       name:'node.js',
     },
     {
-      icon:<FaFigma/>,
-      name:'figma',
+      icon:<SiMongodb/>,
+      name:'MongoDB',
     },
+    {
+      icon:<FaPython/>,
+      name:'python',
+    },
+    {
+      icon:<FaJava/>,
+      name:'java',
+    },
+    {
+      icon:<BiLogoPostgresql/>,
+      name:'SQL',
+    },
+    {
+      icon:<SiFlutter/>,
+      name:'Flutter',
+    },
+
   ]
 }
 
@@ -172,7 +205,7 @@ const Resume = () => {
       <div className="container mx-auto">
         <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="experience">Activities</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>

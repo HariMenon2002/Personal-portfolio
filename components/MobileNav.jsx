@@ -11,8 +11,8 @@ const links=[
         path:'/'
     },
     {
-        name:'services',
-        path:'/services'
+        name:'certifications',
+        path:'/certifications'
     },
     {
         name:'resume',
@@ -35,6 +35,7 @@ const MobileNav = () => {
             <CiMenuFries className="text-[32px] text-accent"></CiMenuFries>
       </SheetTrigger>
       <SheetContent className="flex flex-col">
+
         <div className="mt-32 mb-40 text-center text-2xl">
             <Link href="/">
                 <h1 className="text-4xl font-semibold">Hari<span className="text-accent">.</span></h1>
