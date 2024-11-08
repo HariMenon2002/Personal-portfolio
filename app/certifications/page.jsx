@@ -18,13 +18,13 @@ const services=[
     {
       num:'03',
       title:'GATE CS',
-      description:'GATE Computer Science 2024 examination conducted by IISC Bangalore scorecard',
+      description:'GATE Computer Science 2024 examination scorecard conducted by IISC Bangalore scorecard',
       href:"./assets/certification/gate cs.pdf"
     },
     {
       num:'04',
       title:'GATE DA',
-      description:'GATE Data Science 2024 examination conducted by IISC Bangalore scorecard',
+      description:'GATE Data Science 2024 examination scorecard conducted by IISC Bangalore scorecard',
       href:"./assets/certification/gate da.pdf"
     },
 ]

@@ -88,7 +88,7 @@ const experience={
   items:[
     {
       company:"ISTE GEC Thrissur",
-      position:"ECE Deptartment Vice head",
+      position:"ECE Department Vice head",
       duration:"2023-2024"
     },
     {
@@ -117,7 +117,7 @@ const education={
   items:[
     {
       institution:"Government Engineering College Thrissur",
-      degree:"B.Tech.",
+      degree:"B.Tech. in ECE",
       duration:"2020-2024"
     },
     {
