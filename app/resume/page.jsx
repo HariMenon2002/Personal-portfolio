@@ -7,7 +7,7 @@ import { SiFlutter } from "react-icons/si";
 //about data
 const about={
   title:'About me',
-  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis asperiores dicta. Magnam quam sequi blanditiis odio.',
+  description:'I am a Full stack developer who has good knowledge in computer science concepts like Data Structures and Algorithms, Operatings Systems and Databases',
   info:[
     {
       fieldName:"Name",
